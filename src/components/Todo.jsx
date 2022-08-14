@@ -1,18 +1,18 @@
 
 
-const Todo = ({todo}) => {
+const Todo = ({todo,onComplete}) => {
     
     
     
     return (
-        <div key={todo.id}>
-            <div>{todo.text}</div>
+        <div className="todo" key={todo.id}>
+            <div  onClick={onComplete} className={todo.isCompleted && "completed"} >{todo.text}</div>
             <div>
                 <button>Edit</button>
-                <button>Complete</button>
+                <button >Delete</button>
             </div>
         </div>
     );
 }
- 
+
 export default Todo;

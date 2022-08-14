@@ -11,6 +11,17 @@ const TodoApp = () => {
         setTodos([...todos,newTodo])
     }
 
+    const completeTodo = (id) =>{
+        const index = todos.findIndex((todo) => todo.id === id);
+        const selectedTodo = {...todos[index]};
+
+        selectedTodo.isCompleted = !selectedTodo.isCompleted;
+
+        const updatedTodos = [...todos]
+        updatedTodos[index] = selectedTodo
+        setTodos(updatedTodos)
+    }
+
     return (
         <div className="container">
             <TodoForm
@@ -18,6 +29,7 @@ const TodoApp = () => {
             />
             <TodoList
                 todos = {todos}
+                completeHandler = {completeTodo}
             />
         </div>
     );

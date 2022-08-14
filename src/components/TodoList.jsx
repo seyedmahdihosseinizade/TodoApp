@@ -1,6 +1,6 @@
 import Todo from "./Todo";
 
-const TodoList = ({todos}) => {
+const TodoList = ({todos,completeHandler}) => {
     
 
     const renderTodos = () =>{
@@ -10,6 +10,7 @@ const TodoList = ({todos}) => {
                 <Todo
                     key = {todo.id}
                     todo = {todo}
+                    onComplete = {() => completeHandler(todo.id)}
                 />
             );
         })
