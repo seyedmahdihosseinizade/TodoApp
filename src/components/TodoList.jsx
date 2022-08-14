@@ -1,6 +1,6 @@
 import Todo from "./Todo";
 
-const TodoList = ({todos,completeHandler}) => {
+const TodoList = ({todos,completeHandler,deleteHandler}) => {
     
 
     const renderTodos = () =>{
@@ -11,6 +11,7 @@ const TodoList = ({todos,completeHandler}) => {
                     key = {todo.id}
                     todo = {todo}
                     onComplete = {() => completeHandler(todo.id)}
+                    onDelete = {() => deleteHandler(todo.id)}
                 />
             );
         })
