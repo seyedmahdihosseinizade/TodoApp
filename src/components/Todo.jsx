@@ -1,6 +1,6 @@
 
 
-const Todo = ({todo,onComplete,onDelete}) => {
+const Todo = ({todo,onComplete,onDelete,onEdit}) => {
     
     
     
@@ -8,7 +8,7 @@ const Todo = ({todo,onComplete,onDelete}) => {
         <div className="todo" key={todo.id}>
             <div  onClick={onComplete} className={todo.isCompleted ? "completed" : ""} >{todo.text}</div>
             <div>
-                <button>Edit</button>
+                <button onClick={onEdit}>Edit</button>
                 <button onClick={onDelete}>Delete</button>
             </div>
         </div>
