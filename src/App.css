@@ -28,7 +28,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 20rem;
+  width: 21.5rem;
   margin: 10px;
 }
 
@@ -36,4 +36,23 @@
   text-decoration: line-through;
   text-decoration-color: crimson;
   
+}
+
+input{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 3px;
+  outline: none;
+}
+
+input:focus{
+  border: 1px solid crimson;
+}
+
+button{
+  margin-left: 1rem;
+  padding: 4px 3px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #ccc;
 }
