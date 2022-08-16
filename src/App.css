@@ -43,16 +43,59 @@ input{
   border-radius: 5px;
   padding: 5px 3px;
   outline: none;
+  width: 200px;
 }
 
 input:focus{
   border: 1px solid crimson;
 }
 
-button{
-  margin-left: 1rem;
-  padding: 4px 3px;
+
+
+.formControl{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20rem;
+  margin-bottom: 10px;
+}
+
+.edit{
+  color: #6d28d9;
+  background-color: #fff;
+  border: 1px  solid #6d28d9;
   border-radius: 5px;
   outline: none;
-  border: 1px solid #ccc;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.remove{
+  color: crimson;
+  border: 1px solid crimson;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.Add{
+  color: #fff;
+  border: 1px solid rgb(53, 45, 47);
+  background-color:#6d28d9;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer ;
+}
+
+
+
+.updateTodo{
+  background-color: #fff;
+  border: 1px solid #6d28d9;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #6d28d9;
+  cursor: pointer ;
 }

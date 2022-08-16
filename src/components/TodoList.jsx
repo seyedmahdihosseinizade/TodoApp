@@ -5,7 +5,7 @@ import TodoForm from "./TodoForm";
 const TodoList = ({todos,completeHandler,deleteHandler,onUpdate}) => {
     
     const [edit,setEdit] = useState({id:null,text:"" , isCompleted:false})
-
+    // console.log(edit);
     const editTodo = (newValue) =>{
         onUpdate(edit.id,newValue)
         setEdit({id:null,text:""})
