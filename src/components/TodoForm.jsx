@@ -22,7 +22,7 @@ const TodoForm = ({submitTodo,edit}) => {
         submitTodo(input)
         setInput("")
     }
-    console.log(edit);
+    // console.log(edit);
     return (
         <form onSubmit={submitHandler}>
             <div className="formControl">

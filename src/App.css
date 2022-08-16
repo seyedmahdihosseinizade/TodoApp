@@ -1,5 +1,4 @@
 .App{
-  /* background-color: crimson; */
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -10,6 +9,7 @@
 
 .App h1{
   margin-bottom: 30px;
+  color: #fff;
 }
 
 .container{
@@ -32,10 +32,14 @@
   margin: 10px;
 }
 
+.todoText{
+  cursor: pointer;
+  font-weight: bold;
+}
+
 .completed{
   text-decoration: line-through;
   text-decoration-color: crimson;
-  
 }
 
 input{
@@ -47,7 +51,7 @@ input{
 }
 
 input:focus{
-  border: 1px solid crimson;
+  border: 1px solid #0231e1;
 }
 
 
@@ -61,32 +65,35 @@ input:focus{
 }
 
 .edit{
-  color: #6d28d9;
+  color: #0231e1;
   background-color: #fff;
-  border: 1px  solid #6d28d9;
+  border: 1px  solid #0231e1;
   border-radius: 5px;
   outline: none;
-  padding: 5px 10px;
+  padding: 4px 10px;
   cursor: pointer;
+  font-size: 16px;
 }
 
 .remove{
-  color: crimson;
-  border: 1px solid crimson;
+  color: rgb(242, 15, 95);
+  border: 1px solid rgb(242, 15, 95);
   background-color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
   margin-left: 10px;
+  font-size: 15px;
 }
 
 .Add{
   color: #fff;
   border: 1px solid rgb(53, 45, 47);
-  background-color:#6d28d9;
+  background-color:#0231e1;
   padding: 5px 10px;
   border-radius: 5px;
   margin-left: 10px;
   cursor: pointer ;
+  font-size: 15px;
 }
 
 
@@ -98,4 +105,23 @@ input:focus{
   border-radius: 5px;
   color: #6d28d9;
   cursor: pointer ;
+}
+
+
+
+.navBar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navBar span{
+  background-color: #6d28d9;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.5rem;
+  color: #fff;
 }
