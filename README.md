@@ -1,3 +1,3 @@
 Todo react app .
-<br/>
+<hr style="border:2px solid gray">
 ![alt text](https://github.com/seyedmahdihosseinizade/TodoApp/blob/main/Capture.PNG)
