@@ -33,7 +33,7 @@
 }
 
 .todoText{
-  cursor: pointer;
+  cursor: pointer !important ;
   font-weight: bold;
 }
 
@@ -71,8 +71,8 @@ input:focus{
   border-radius: 5px;
   outline: none;
   padding: 4px 10px;
-  cursor: pointer;
   font-size: 16px;
+  cursor: pointer !important ;
 }
 
 .remove{
@@ -104,7 +104,6 @@ input:focus{
   padding: 5px 10px;
   border-radius: 5px;
   color: #6d28d9;
-  cursor: pointer ;
 }
 
 
@@ -113,7 +112,9 @@ input:focus{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
+
 .navBar span{
   background-color: #6d28d9;
   width: 20px;
@@ -124,4 +125,8 @@ input:focus{
   align-items: center;
   margin-right: 0.5rem;
   color: #fff;
+}
+
+.select {
+  margin-left: 10px;
 }
